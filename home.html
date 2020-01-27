@@ -11,6 +11,52 @@
         <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Miriam+Libre&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+          
+          /* Float four columns side by side */
+          .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+          }
+          
+          /* Remove extra left and right margins, due to padding */
+          .row {margin: 0 -5px;}
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Responsive columns */
+          @media screen and (max-width: 600px) {
+            .column {
+              width: 100%;
+              display: block;
+              margin-bottom: 20px;
+            }
+          }
+          
+          /* Style the counter cards */
+          .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+          }
+          </style>
+
+
+
+
     </head>
     <body>
         <!--NavBar-->
@@ -88,32 +134,38 @@
 <!--CountDown Ends-->
 
 <!--Slider-->
-<div style="margin: 20px;" class="card-group">
-  <div class="card">
-    <div style="background-color: black;" class="card-body">
-      <center><img style="width: 90px;" src="images/man.png" class="card-img-top" alt="..."></center>
-      <center><h2 style="color: whitesmoke; font-family: 'Miriam Libre', sans-serif;">Guests</h2></center>
-      <br>
-     <center><button type="button" class="btn btn-outline-dark">Find Out</button></center>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Card 1</h3>
+      <p>Some text</p>
+      <p>Some text</p>
     </div>
   </div>
-  <div class="card">
-      <div style="background-color: black;" class="card-body">
-        <center><img style="width: 90px;" src="images/costume.png" class="card-img-top" alt="..."></center>
-        <br>
-        <center><h2 style="color: whitesmoke; font-family: 'Miriam Libre', sans-serif;">3 Days of Fun</h2></center>
-        <br>
-        <center><p style="color: whitesmoke; font-family: 'Miriam Libre', sans-serif;">28 Feb to 01 March</p></center>
-        <center><p style="color: whitesmoke; font-family: 'Miriam Libre', sans-serif;">SMIT</p></center>
-      </div>
-    </div>
+
+  <div class="column">
     <div class="card">
-      <div style="background-color: black;" class="card-body">
-        <center><img style="width: 90px;" src="images/miscellaneous.png" class="card-img-top" alt="..."></center>
-            <br>
-            <center><h2 style="color: whitesmoke; font-family: 'Miriam Libre', sans-serif;">Amazing Days and Nights</h2></center>
+      <h3>Card 2</h3>
+      <p>Some text</p>
+      <p>Some text</p>
     </div>
-</div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Card 3</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Card 5</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
 </div>
 <!--Slider Ends-->
 
