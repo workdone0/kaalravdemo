@@ -43,11 +43,24 @@
         </nav style="color:black;" >
   <!--NavBar Ends-->
   <!-- Main content starts -->
-  <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-color:rgb(0,0,0);">
+   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: pull">
 
-    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">Headline</h1>
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="images/gaanaSponsor.jpeg" alt="" style="height:1920px; width:1080px;  padding: 6%;" uk-cover>
+                </li>
+                <li>
+                    <img src="images/nyk.png" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="#" alt="" uk-cover>
+                </li>
+            </ul>
 
-</div>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+        </div>
 
   <!-- Main content ends -->
         <!--Footer-->
